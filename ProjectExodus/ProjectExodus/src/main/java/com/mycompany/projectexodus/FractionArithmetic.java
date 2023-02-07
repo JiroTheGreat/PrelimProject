@@ -24,7 +24,7 @@ public class FractionArithmetic {
 
         do {
 
-            decision = menu();
+            decision = menu(fractionArray);
 
 
             if (decision == 1){
@@ -97,7 +97,7 @@ public class FractionArithmetic {
         return temp;
     }
 
-    public static int menu (){
+    public static int menu (Fraction [] fractionArray){
 
         int decision = 0;
 
@@ -111,6 +111,7 @@ public class FractionArithmetic {
         System.out.println("6. DIVISION OF FRACTIONS");
         System.out.println("7. SIMPLIFY A FRACTION");
         System.out.println("8. EXIT PROGRAM");
+        System.out.println(Array.toString(fractionArray));
         System.out.println(" ");
         System.out.print("Enter your choice: ");
         decision = Integer.parseInt(kb.nextLine());
