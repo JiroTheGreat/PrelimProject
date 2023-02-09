@@ -21,71 +21,80 @@ public class FractionArithmetic {
 
         number = getIntroduction();
         fractionArray = new Fraction[number];
+        
+        // decision = menu(fractionArray);
+        /** Improved menu
+         * Using the switch case
+         * */
 
-        do {
+        /** while (decision != 0) {
 
+            switch (decision) {
+                case 1:
+                    addAFraction(number, fractionArray);
+                    break;
+                case 2:
+                    removeAFractions(fractionArray);
+                    break;
+                case 3:
+                    additionOfFractions(fractionArray);
+                    break;
+                case 4:
+                    subtractionOfFractions(fractionArray);
+                    break;
+                case 5:
+                    multiplicationOfFractions(fractionArray);
+                    break;
+                case 6:
+                    divisionOfFractions(fractionArray);
+                    break;
+                case 7:
+                    simplificationOfAFraction(fractionArray);
+                    break;
+                default:
+                    System.exit(0);
+                    break;
+
+            }
             decision = menu(fractionArray);
-
-
+        */}
+        
+        do {
+            decision = menu(fractionArray);
             if (decision == 1){
-
                 fractionArray = addAFraction(number, fractionArray);
                 flag = 1;
-
             }
-
             else if (decision == 2){
-
                 fractionArray = removeAFractions(fractionArray);
                 flag = 2;
-
             }
-
             else if (decision == 3){
-
                 additionOfFractions(fractionArray);
                 flag = 3;
-
             }
-
             else if (decision == 4){
-
                 subtractionOfFractions(fractionArray);
                 flag = 4;
-
             }
-
             else if (decision == 5){
-
                 multiplicationOfFractions(fractionArray);
-                flag = 5;
-
+               flag = 5;
             }
-
             else if (decision == 6){
-
                 divisionOfFractions(fractionArray);
                 flag = 6;
-
             }
-
             else if (decision == 7){
-
                 simplificationOfAFraction(fractionArray);
                 flag = 7;
             }
-
             else
                 flag = 8;
-
         } while (flag != 8);
-
-
-        System.exit(0);
+        System.exit(0);      
 
     }
-
-
     public static int getIntroduction(){
 
         int temp = 0;
