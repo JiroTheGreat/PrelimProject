@@ -22,12 +22,12 @@ public class FractionArithmetic {
         number = getIntroduction();
         fractionArray = new Fraction[number];
         
-        // decision = menu(fractionArray);
+        //decision = menu(fractionArray);
         /** Improved menu
          * Using the switch case
          * */
 
-        /** while (decision != 0) {
+     while (decision != 0) {
 
             switch (decision) {
                 case 1:
@@ -57,41 +57,9 @@ public class FractionArithmetic {
 
             }
             decision = menu(fractionArray);
-        */}
+        }
         
-        do {
-            decision = menu(fractionArray);
-            if (decision == 1){
-                fractionArray = addAFraction(number, fractionArray);
-                flag = 1;
-            }
-            else if (decision == 2){
-                fractionArray = removeAFractions(fractionArray);
-                flag = 2;
-            }
-            else if (decision == 3){
-                additionOfFractions(fractionArray);
-                flag = 3;
-            }
-            else if (decision == 4){
-                subtractionOfFractions(fractionArray);
-                flag = 4;
-            }
-            else if (decision == 5){
-                multiplicationOfFractions(fractionArray);
-               flag = 5;
-            }
-            else if (decision == 6){
-                divisionOfFractions(fractionArray);
-                flag = 6;
-            }
-            else if (decision == 7){
-                simplificationOfAFraction(fractionArray);
-                flag = 7;
-            }
-            else
-                flag = 8;
-        } while (flag != 8);
+        
         System.exit(0);      
 
     }
