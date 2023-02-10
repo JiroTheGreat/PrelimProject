@@ -22,7 +22,7 @@ public class FractionArithmetic {
         number = getIntroduction();
         fractionArray = new Fraction[number];
         
-        //decision = menu(fractionArray);
+        decision = menu(fractionArray);
         /** Improved menu
          * Using the switch case
          * */
