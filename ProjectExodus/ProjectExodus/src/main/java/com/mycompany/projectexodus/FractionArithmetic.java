@@ -88,7 +88,8 @@ public class FractionArithmetic {
         System.out.println("6. DIVISION OF FRACTIONS");
         System.out.println("7. SIMPLIFY A FRACTION");
         System.out.println("8. EXIT PROGRAM");
-        System.out.println(Arrays.toString(fractionArray));
+        System.out.println(" ");
+        System.out.println("Your Fractions are: " + Arrays.toString(fractionArray));
         System.out.println(" ");
         System.out.print("Enter your choice: ");
         decision = Integer.parseInt(kb.nextLine());
