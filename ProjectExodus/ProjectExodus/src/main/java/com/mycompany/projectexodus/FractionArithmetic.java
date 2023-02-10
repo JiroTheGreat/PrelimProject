@@ -138,13 +138,14 @@ public class FractionArithmetic {
 
                 for (int j = i; j<FractionArray.length; j++){
 
-                    if (j < FractionArray.length-1)
+                    if (j === FractionArray.length-1){
 
-                        FractionArray[j] = FractionArray[j+1];
-
-
+                        FractionArray[j] = null;
 
 
+                    }
+                    else
+                        FractionArray[j]=FractionArray[j+1];
                 }
             }
         }
